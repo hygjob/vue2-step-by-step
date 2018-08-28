@@ -1,0 +1,26 @@
+<!-- s12_custom_events.html-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>s12_custom_events</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.2.3/css/bulma.css">
+
+    <style >
+        body { padding-top:  40px; }
+    </style>
+</head>
+<body>
+    <div id="root" class="container">
+
+        <coupon @applied="onCouponApplied"></coupon>
+        <h1 v-if="couponApplied">You used a coupon!</h1>
+
+        
+
+    </div>
+
+    <script type="text/javascript" src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script type="text/javascript" src="s12_custom_events.js"></script>
+
+</body>
+</html>
